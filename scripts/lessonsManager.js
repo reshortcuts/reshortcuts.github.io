@@ -37,7 +37,7 @@
             keymage.clearChains();
             $('#thankYou').modal('show');
             $('#thankYou').on('hidden.bs.modal', function () {
-                window.location = "./";
+                window.location = "/";
             })
         }
 
@@ -90,7 +90,7 @@
             if (shortcut.count < 2) {
                 $('#reshortcuts-key-value').text(displayShortcut(shortcut.short));
             } else {
-                $('#reshortcuts-key-value').html('&nbsp;');
+                $('#reshortcuts-key-value').html('? ? ?');
             }
 
             keymage.clearChains();
@@ -111,13 +111,16 @@
         }
 
         var init = function (lessonNo) {
-
-            switch (lessonNo.toString()) {
+            var lesson = lessonNo.toString();
+            switch (lesson) {
                 case "1":
                     shortcuts = lessonsProvider.getLesson1();
                     break;
+                case "2":
+                    shortcuts = lessonsProvider.getLesson2();
+                    break;
                 default:
-                    alert("Lesson " + lessonNo.toString() + " doesn't exist");
+                    alert("Lesson " + lesson + " doesn't exist");
                     return;
             }
 

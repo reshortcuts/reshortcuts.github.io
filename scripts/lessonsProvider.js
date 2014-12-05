@@ -20,8 +20,24 @@
             return shortcuts;
         };
 
+        var getLesson2 = function () {
+            var shortcuts = [];
+
+            shortcuts.push({ short: 'alt-del', alternateShort : null, name: 'Safe delete', count: 0 });
+            shortcuts.push({ short: 'ctrl-d', alternateShort : null, name: 'Duplicate a line or selection', count: 0 });
+            shortcuts.push({ short: 'alt-ins', alternateShort : null, name: 'Generate code', count: 0 });
+            shortcuts.push({ short: 'ctrl-shift-f1', alternateShort : null, name: 'Quick documentation', count: 0 });
+            shortcuts.push({ short: 'alt-home', alternateShort : null, name: 'Go to base symbols', count: 0 });
+            shortcuts.push({ short: 'alt-ctrl-f', alternateShort : null, name: 'File Structure window', count: 0 });
+            shortcuts.push({ short: 'ctrl-shift-r', alternateShort : null, name: 'Refactor this', count: 0 });
+            shortcuts.push({ short: 'ctrl-shift-space', alternateShort : null, name: 'Parameter info', count: 0 });
+
+            return shortcuts;
+        };
+
         return {
-            getLesson1: getLesson1
+            getLesson1: getLesson1,
+            getLesson2: getLesson2
         };
     };
 } (jQuery));

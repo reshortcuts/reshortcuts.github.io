@@ -39,53 +39,27 @@
             </div>
 
             <div class="bs-docs-section">
+                <p class="text-center lead">Lesson 1 - learning mode - Visual Studio keyboard scheme</p>
+                <!--[if IE]>
+                    <p>Some shortcuts are currently not working on IE - please try different broswer.</p>
+                <![endif]-->
                 <div class="row">
                     <div class="col-lg-2"></div>
-                    <div class="col-lg-8 well">
-                        <h4>Lesson 1</h4>
-              Surround with, Available quick-fixes and context actions, Code completion, Smart code completion, Go to file member, Go to declaration, Go to implementation, Rename
-                        <div class="btn-group btn-group-justified">
-                            <a href="/lessons/1/" class="btn btn-success">Learn</a>
-                            <a href="#" class="btn btn-info disabled">Test</a>
+                    <div class="col-lg-8">
+                        <div class="jumbotron text-center"><h2 id="reshortcut-command"></h2>
+                            <div class="progress progress-bar-warning">
+                                <div id="progress" class="progress-bar progress-bar-success" style="width: 0%"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-2"></div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8 well">
-                        <h4>Lesson 2</h4>
-              Safe delete, Duplicate a line or selection, Generate code, Quick documentation, Go to base symbols, File Structure window, Refactor this, Parameter info
-                        <div class="btn-group btn-group-justified">
-                            <a href="/lessons/2/" class="btn btn-success">Learn</a>
-                            <a href="#" class="btn btn-info disabled">Test</a>
-                        </div>
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+                        <div id="reshortcuts-key" class="alert-info text-center"><h2><strong id="reshortcuts-key-value"></strong></h2></div>
                     </div>
-                    <div class="col-lg-2"></div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8 well">
-                        <h4>Lesson 3</h4>
-              (not available yet)
-                        <div class="btn-group btn-group-justified">
-                            <a href="#" class="btn btn-success disabled">Learn</a>
-                            <a href="#" class="btn btn-info disabled">Test</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2"></div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8 well">
-                        <h4>Lesson 4</h4>
-              (not available yet)
-                        <div class="btn-group btn-group-justified">
-                            <a href="#" class="btn btn-success disabled">Learn</a>
-                            <a href="#" class="btn btn-info disabled">Test</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4"></div>
                 </div>
             </div>
 
@@ -110,8 +84,42 @@
                 </div>
             </footer>
         </div>
+
+        <div class="bs-component">
+            <div id="thankYou" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            <h4 class="modal-title">CONGRATULATIONS!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>You've just complited Lesson 1!</p>
+                            <p>Now try <a href="/lessons/2/"><b>Lesson 2</b></a></p>
+                            <p>&nbsp;</p>
+                            <p><a href="https://twitter.com/intent/tweet?text=%23ReShortcuts%20-%20Probably%20the%20best%20way%20to%20learn%20%23ReSharper%20shortcuts!%20http%3A%2F%2Freshortcuts.github.io" target="_blank"><b>click here</b></a> and let your friends know about ReShortcuts!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
+        </div>
+
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="/scripts/bootstrap.min.js"></script>
+        <script src="/scripts//keymage.js"></script>
+
+        <script src="/scripts/lessonsProvider.js"></script>
+        <script src="/scripts/lessonsManager.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+               window.reShortcuts.lessonsManager().init(1); 
+            });
+        </script>
 
         <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

@@ -1,127 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>ReShortcuts: Easy way to learn ReSharper shortcuts!</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/styles/bootstrap.css" media="screen">
-    </head>
-    <body>
-        <div class="container">
-            <div class="bs-docs-section">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="page-header">
-                            <h1 id="navbar">ReShortcuts</h1>
-                            <p class="lead">Probably the best way to learn ReSharper shortcuts!</p>
-                        </div>
-                        <div class="bs-component">
-                            <div class="navbar navbar-default">
-                                <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                    <span class="navbar-brand">It is time to learn!</span>
-                                </div>
-                                <div class="navbar-collapse collapse navbar-responsive-collapse">
-                                    <ul class="nav navbar-nav">
-                                        <li><a href="/">Home</a></li>
-                                        <li><a href="/author">Author</a></li>
-                                        <li><a href="https://github.com/reshortcuts/reshortcuts.github.io" target="_blank">View on GitHub</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="bs-docs-section">
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8 well">
-                        <h4>Lesson 1</h4>
-              Surround with, Available quick-fixes and context actions, Code completion, Smart code completion, Go to file member, Go to declaration, Go to implementation, Rename
-                        <div class="btn-group btn-group-justified">
-                            <a href="/lessons/1/" class="btn btn-success">Learn</a>
-                            <a href="#" class="btn btn-info disabled">Test</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2"></div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8 well">
-                        <h4>Lesson 2</h4>
-              Safe delete, Duplicate a line or selection, Generate code, Quick documentation, Go to base symbols, File Structure window, Refactor this, Parameter info
-                        <div class="btn-group btn-group-justified">
-                            <a href="/lessons/2/" class="btn btn-success">Learn</a>
-                            <a href="#" class="btn btn-info disabled">Test</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2"></div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8 well">
-                        <h4>Lesson 3</h4>
-              (not available yet)
-                        <div class="btn-group btn-group-justified">
-                            <a href="#" class="btn btn-success disabled">Learn</a>
-                            <a href="#" class="btn btn-info disabled">Test</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2"></div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8 well">
-                        <h4>Lesson 4</h4>
-              (not available yet)
-                        <div class="btn-group btn-group-justified">
-                            <a href="#" class="btn btn-success disabled">Learn</a>
-                            <a href="#" class="btn btn-info disabled">Test</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2"></div>
-                </div>
-            </div>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="ReShortcuts: Easy way to learn ReSharper shortcuts!">
+	<meta name="author" content="Lukasz Gasior (http://gasior.net.pl)">
 
-            <div class="bs-docs-section" style="padding-top:100px;">
-                <div class="row">
-                    <div class="bs-component">
-                        <div class="alert alert-dismissable alert-danger">
-                            <strong>ReShortcuts</strong> is in BETA phase! All issues and ideas can be reported on <a href="https://github.com/reshortcuts/reshortcuts.github.io/issues" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+	<title>ReShortcuts: Easy way to learn ReSharper shortcuts!</title>
 
-            <footer class="clearfix">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>Made by <a href="http://gasior.net.pl" target="_blank" rel="nofollow">Lukasz Gasior</a>.</p>
-                        <p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE" target="_blank">MIT License</a>.</p>
-                        <p>Based on <a href="http://bootswatch.com/superhero/" target="_blank">SuperHero</a>, free <a href="http://getbootstrap.com" rel="nofollow" target="_blank">Bootstrap</a> template. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow" target="_blank">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow" target="_blank">Google</a>.</p>
-                        <p>Keyboard shortcuts handling based on <a href="https://github.com/piranha/keymage" target="_blank">keymage</a></p>
-                    </div>
-                </div>
-            </footer>
-        </div>
-        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="/scripts/bootstrap.min.js"></script>
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
 
-        <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-56770983-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-        </script>
-    </body>
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="/assets/css/bootstrap-theme.css" media="screen">
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="/assets/js/html5shiv.js"></script>
+	<script src="/assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body class="home">
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="/">ReShortcuts</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="/">Home</a></li>
+					<li class="active"><a href="/Tips">Tips & trick</a></li>
+					<li class="active"><a href="/Author">Author</a></li>
+					<li class="active"><a class="btn" href="https://github.com/reshortcuts/reshortcuts.github.io" target="_blank">View on GitHub</a></li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+	<!-- /.navbar -->
+
+	<!-- Header -->
+	<header id="head">
+		<div class="container">
+			<div class="row">
+				<h1 class="lead">Probably the best way to learn ReSharper shortcuts!</h1>
+				<p class="tagline">With free, interactive exercises and useful tips & tricks!</p>
+				<p><a class="btn btn-action btn-lg" href="/lessons/1/" role="button">Start Learning!</a></p>
+				<p class="tagline">More lessons available below.</p>
+			</div>
+		</div>
+	</header>
+	<!-- /Header -->
+
+	<!-- Intro -->
+	<div class="container text-center">
+		<br>
+		<br>
+		<h2 class="thin">Why ReShortcuts?</h2>
+		<p class="text-muted">
+			I'm not a JetBrains guy but I love ReSharper!<br/>
+			It is amazing tool which I'm using almost every day. Unfortunately a lot of developers thinks that ReSharper only adds ALT+ENTER shortcut.<br/>
+			Of course ALT+ENTER is very useful and probably the most widely used shortcut - but ReSharper offers you much, much more!<br/>
+			With this site I'd like to share with you my love to ReSharper and show how to use ReSharper effectively.<br/>
+			And maybe encourage you to buy my book :)
+		</p>
+	</div>
+	<!-- /Intro-->
+
+	<div class="jumbotron top-space">
+		<div class="container">
+
+			<h2 class="text-center">It is time to learn!</h2>
+
+		</div>
+	</div>
+
+	<!-- container -->
+	<div class="container">
+
+		<div class="jumbotron top-space">
+			<h4>Surround with, Available quick-fixes and context actions, Code completion, Smart code completion, Go to file member, Go to declaration, Go to implementation, Rename.</h4>
+			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/1/">Open lesson 1 »</a></p>
+		</div>
+
+		<div class="jumbotron top-space">
+			<h4>Safe delete, Duplicate a line or selection, Generate code, Quick documentation, Go to base symbols, File Structure window, Refactor this, Parameter info</h4>
+			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/2/">Open lesson 2 »</a></p>
+		</div>
+
+		<div class="jumbotron top-space">
+			<h4>Safe delete, Duplicate a line or selection, Generate code, Quick documentation, Go to base symbols, File Structure window, Refactor this, Parameter info</h4>
+			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/1/">Open lesson 3 »</a></p>
+		</div>
+
+		<div class="jumbotron top-space">
+			<h4>Safe delete, Duplicate a line or selection, Generate code, Quick documentation, Go to base symbols, File Structure window, Refactor this, Parameter info</h4>
+			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/1/">Open lesson 4 »</a></p>
+		</div>
+
+		<div class="jumbotron top-space">
+			<h4>Safe delete, Duplicate a line or selection, Generate code, Quick documentation, Go to base symbols, File Structure window, Refactor this, Parameter info</h4>
+			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/1/">Open lesson 5 »</a></p>
+		</div>
+
+		<div class="jumbotron top-space">
+			<h4>Safe delete, Duplicate a line or selection, Generate code, Quick documentation, Go to base symbols, File Structure window, Refactor this, Parameter info</h4>
+			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/1/">Open lesson 6 »</a></p>
+		</div>
+
+		<div class="jumbotron top-space">
+			<h4>Safe delete, Duplicate a line or selection, Generate code, Quick documentation, Go to base symbols, File Structure window, Refactor this, Parameter info</h4>
+			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/1/">Open lesson 7 »</a></p>
+		</div>
+
+		<div class="jumbotron top-space">
+			<h4>Safe delete, Duplicate a line or selection, Generate code, Quick documentation, Go to base symbols, File Structure window, Refactor this, Parameter info</h4>
+			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/1/">Open lesson 8 »</a></p>
+		</div>
+
+		<div class="jumbotron top-space">
+			<h4>Safe delete, Duplicate a line or selection, Generate code, Quick documentation, Go to base symbols, File Structure window, Refactor this, Parameter info</h4>
+			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/1/">Open lesson 9 »</a></p>
+		</div>
+
+		<div class="jumbotron top-space">
+			<h4>Safe delete, Duplicate a line or selection, Generate code, Quick documentation, Go to base symbols, File Structure window, Refactor this, Parameter info</h4>
+			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/1/">Open lesson 10 »</a></p>
+		</div>
+
+		<div class="col-sm-12 top-space">
+			<div class="row alert alert-dismissable alert-danger">
+				<strong>ReShortcuts</strong> is in BETA phase! All issues and ideas can be reported on <a href="https://github.com/reshortcuts/reshortcuts.github.io/issues"
+				target="_blank">GitHub</a>
+			</div>
+		</div>
+	</div>
+	<!-- /container -->
+
+	<footer id="footer" class="top-space">
+
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Tools</h3>
+						<div class="widget-body">
+							<p>Based on <a href="http://www.gettemplate.com" target="_blank">Progressus</a>, free <a href="http://getbootstrap.com"
+								rel="nofollow" target="_blank">Bootstrap</a> template
+								<br/> Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow" target="_blank">Font Awesome</a></p>
+							<p>Keyboard shortcuts handling based on <a href="https://github.com/piranha/keymage" target="_blank">keymage</a></p>
+						</div>
+					</div>
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Follow me</h3>
+						<div class="widget-body">
+							<p class="follow-me-icons">
+								<a href="http://twitter.com/reshortcuts" target="_blank"><i class="fa fa-twitter fa-2"></i></a>
+								<a href="https://github.com/reshortcuts/reshortcuts.github.io" target="_blank"><i class="fa fa-github fa-2"></i></a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<h3 class="widget-title"></h3>
+						<div class="widget-body">
+
+						</div>
+					</div>
+
+				</div>
+				<!-- /row of widgets -->
+			</div>
+		</div>
+
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="/">Home</a> |
+								<a href="/Tips">Weekly tips & trick</a> |
+								<a href="/Author">Author</a></b>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="text-right">
+								Copyright &copy; 2015, Lukasz Gasior.
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<!-- /row of widgets -->
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+
 </html>

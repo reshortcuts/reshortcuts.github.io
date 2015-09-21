@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ReShortcuts: Easy way to learn ReSharper shortcuts!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/styles/bootstrap.css" media="screen">
+    </head>
+    <body>
+        <div class="container">
+            <div class="bs-docs-section">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="page-header">
+                            <h1 id="navbar">ReShortcuts</h1>
+                            <p class="lead">Probably the best way to learn ReSharper shortcuts!</p>
+                        </div>
+                        <div class="bs-component">
+                            <div class="navbar navbar-default">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <span class="navbar-brand">It is time to learn!</span>
+                                </div>
+                                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="/author">Author</a></li>
+                                        <li><a href="https://github.com/reshortcuts/reshortcuts.github.io" target="_blank">View on GitHub</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bs-docs-section">
+                <p class="text-center lead">Lesson 2 - learning mode - Visual Studio keyboard scheme</p>
+                <!--[if IE]>
+                    <p>Some shortcuts are currently not working on IE - please try different broswer.</p>
+                <![endif]-->
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                        <div class="jumbotron text-center"><h2 id="reshortcut-command"></h2>
+                            <div class="progress progress-bar-warning">
+                                <div id="progress" class="progress-bar progress-bar-success" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+                        <div id="reshortcuts-key" class="alert-info text-center"><h2><strong id="reshortcuts-key-value"></strong></h2></div>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </div>
+
+            <div class="bs-docs-section" style="padding-top:100px;">
+                <div class="row">
+                    <div class="bs-component">
+                        <div class="alert alert-dismissable alert-danger">
+                            <strong>ReShortcuts</strong> is in BETA phase! All issues and ideas can be reported on <a href="https://github.com/reshortcuts/reshortcuts.github.io/issues" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="clearfix">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Made by <a href="http://gasior.net.pl" target="_blank" rel="nofollow">Lukasz Gasior</a>.</p>
+                        <p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE" target="_blank">MIT License</a>.</p>
+                        <p>Based on <a href="http://bootswatch.com/superhero/" target="_blank">SuperHero</a>, free <a href="http://getbootstrap.com" rel="nofollow" target="_blank">Bootstrap</a> template. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow" target="_blank">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow" target="_blank">Google</a>.</p>
+                        <p>Keyboard shortcuts handling based on <a href="https://github.com/piranha/keymage" target="_blank">keymage</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <div class="bs-component">
+            <div id="thankYou" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            <h4 class="modal-title">CONGRATULATIONS!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>You've just complited Lesson 2!</p>
+                            <p>more will be available soon</p>
+                            <p>&nbsp;</p>
+                            <p><a href="https://twitter.com/intent/tweet?text=%23ReShortcuts%20-%20Probably%20the%20best%20way%20to%20learn%20%23ReSharper%20shortcuts!%20http%3A%2F%2Freshortcuts.github.io" target="_blank"><b>click here</b></a> and let your friends know about ReShortcuts!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="/scripts/bootstrap.min.js"></script>
+        <script src="/scripts//keymage.js"></script>
+
+        <script src="/scripts/lessonsProvider.js"></script>
+        <script src="/scripts/lessonsManager.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+               window.reShortcuts.lessonsManager().init(2); 
+            });
+        </script>
+
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-56770983-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+        </script>
+    </body>
+</html>

@@ -53,34 +53,38 @@
 	<!-- container -->
 	<div class="container">
 
-		<div class="top-space">
-			<p class="text-center lead">Lesson 1 - <i>Visual Studio</i> keyboard shortcuts scheme</p>
-			<p class="text-center">Lessons for <i>ReSharper 2.x/IntelliJ IDEA</i> keyboard shortcuts scheme will be avaiable soon
-				<br/>Read more about <a href="https://www.jetbrains.com/resharper/help/Configuring_Keyboard_Shortcuts.html" target="_blank">Configuring Keyboard Shortcuts</a></p>
-			<!--[if IE]>
-                    <p>Some shortcuts are currently not working on Internet Explorer - please try different browser</p>
-                <![endif]-->
-			<div class="row top-space">
-				<div class="col-lg-2"></div>
-				<div class="col-lg-8">
-					<div class="jumbotron text-center">
-						<h2 id="reshortcut-command">Loading lesson...</h2>
-						<div class="progress progress-bar-warning">
-							<div id="progress" class="progress-bar progress-bar-success" style="width: 0%"></div>
-						</div>
-						<ins>Not sure what to do? <a href="/how-does-it-work/">Check how it works!</a></ins>
-					</div>
+		<div class="row">
+
+			<!-- Article main content -->
+			<article class="col-sm-12 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">How does it work?</h1>
+				</header>
+
+				<h3>Lessons!</h3>
+				<p>In ReShortcuts you will learn by repeating ReSharper shortcuts.</p>
+				<p>For each lesson I will show you up to 10 ReSharper features with shortcut prompt.</p>
+				<p><img src="/images/image1.png" class="center-block img-thumbnail" title=""/></p>
+				<p>All of these shortcuts are displayed randomly. Every shortcut prompt is displayed only two times. From third time instead of shortcut you will see three question marks. 
+					This means that you need to remember which shortcut you should use. Of course if you will press wrong shortcut I will prompt you the proper one :).
+				</p>
+				<p><img src="/images/image2.png" class="center-block img-thumbnail" title=""/></p>
+				<p>This process will repeat as long as you will provide proper shortcut for all features for 5 times. And "provide proper shortcut" means I'm not counting the wrong ones :)</p>
+				<p class="text-center lead">Sounds interesting?</p>
+				<p class="text-center"><a class="btn btn-action btn-lg" href="/lessons/1/" role="button">Open Lesson 1 and start learning!</a></p>
+
+				<h3>Follow me on <i class="fa fa-twitter fa-2"></i> Twitter!</h3>
+				<p>Additionally to doing lessons on ReShortcuts you can follow me on <a href="http://twitter.com/reshortcuts" style="color:#FF9B22;"
+					target="_blank"><i class="fa fa-twitter fa-2"></i> Twitter</a> where I'm posting all new <a href="/Tips">Tips & Tricks</a>
+					and interesting posts from other sites!</p>
+				<div class="text-center"><a class="twitter-timeline" href="https://twitter.com/ReShortcuts" data-widget-id="646007630851403776">Tweets by @ReShortcuts</a>
+					<script>
+						!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+					</script>
 				</div>
-				<div class="col-lg-2"></div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4"></div>
-				<div class="col-lg-4">
-					<div id="reshortcuts-key" class="alert-info text-center">
-						<h2><strong id="reshortcuts-key-value"></strong></h2></div>
-				</div>
-				<div class="col-lg-4"></div>
-			</div>
+
+			</article>
+			<!-- /Article -->
 		</div>
 
 		<div class="col-sm-12 top-space">
@@ -159,44 +163,9 @@
 
 	</footer>
 
-	<div>
-		<div id="thankYou" class="modal">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">×</button>
-						<h4 class="modal-title">CONGRATULATIONS!</h4>
-					</div>
-					<div class="modal-body">
-						<p>You've just complited Lesson 1!</p>
-						<p>Now try <a href="/lessons/2/"><b>Lesson 2</b></a></p>
-						<p>&nbsp;</p>
-						<p><a href="https://twitter.com/intent/tweet?text=%23ReShortcuts%20-%20Probably%20the%20best%20way%20to%20learn%20%23ReSharper%20shortcuts!%20http%3A%2F%2Freshortcuts.github.io"
-							target="_blank"><b>click here</b></a> and let your friends know about ReShortcuts!</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
-	</div>
-
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-
-	<script src="/scripts//keymage.js"></script>
-
-	<script src="/scripts/lessonsProvider.js"></script>
-	<script src="/scripts/lessonsManager.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function(){
-               window.reShortcuts.lessonsManager().init(1); 
-            });
-	</script>
 </body>
 
 </html>

@@ -48,97 +48,39 @@
 	</div>
 	<!-- /.navbar -->
 
-	<!-- Header -->
-	<header id="head">
-		<div class="container">
-			<div class="row">
-				<h1 class="lead">Probably the best way to learn ReSharper shortcuts!</h1>
-				<p class="tagline">With free, interactive exercises and useful tips & tricks!</p>
-				<p><a class="btn btn-action btn-lg" href="/lessons/1/" role="button">Start Learning!</a></p>
-				<p class="tagline">More lessons available below.</p>
-			</div>
-		</div>
-	</header>
-	<!-- /Header -->
-
-	<!-- Intro -->
-	<div class="container text-center">
-		<br>
-		<br>
-		<h2 class="thin">Why ReShortcuts?</h2>
-		<p class="text-muted">
-			I'm not a JetBrains guy but I love ReSharper!<br/>
-			It is amazing tool which I'm using almost every day. Unfortunately a lot of developers thinks that ReSharper only adds ALT+ENTER shortcut.<br/>
-			Of course ALT+ENTER is very useful and probably the most widely used shortcut - but ReSharper offers you much, much more!<br/>
-			With this site I'd like to share with you my love to ReSharper and show how to use ReSharper effectively.<br/>
-			And maybe encourage you to buy my book :)
-		</p>
-	</div>
-	<!-- /Intro-->
-
-	<div class="jumbotron top-space">
-		<div class="container">
-
-			<h2 class="text-center">It is time to learn!</h2>
-
-		</div>
-	</div>
+	<header id="head" class="secondary"></header>
 
 	<!-- container -->
 	<div class="container">
 
-		<div class="jumbotron top-space">
-			<h4 class="lead">Lesson 1 - Basic shortcuts</h4>
-			<h5>Surround with, Available quick-fixes and context actions, Code completion, Smart code completion, Go to file member, Go to declaration, Go to implementation, Rename.</h5>
-			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/1/">Open lesson 1 »</a></p>
-		</div>
-
-		<div class="jumbotron top-space">
-			<h4 class="lead">Lesson 2 - Basic shortcuts 2</h4>
-			<h5>Safe delete, Duplicate a line or selection, Generate code, Quick documentation, Go to base symbols, File Structure window, Select file in Solution Explorer, Parameter info</h5>
-			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/2/">Open lesson 2 »</a></p>
-		</div>
-
-		<div class="jumbotron top-space">
-			<h4 class="lead">Lesson 3 - Navigation</h4>
-			<h5>Go to next member/tag, Go to previous member/tag, Recent files, Create bookmark 1 (you can use numbers 1 .. 9), Go to bookmark 1 (you can use numbers 1 .. 9), List of all bookmarks, Go to recent edits, Go to type of symbol, Related files, Go to file</h5>
-			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/3/">Open lesson 3 »</a></p>
-		</div>
-
-		<div class="jumbotron top-space">
-			<h4 class="lead">Lesson 4 - Create & Editing</h4>
-			<h5>Introduce variable, Live templates, File template, Select containing declaration, Comment with block comment, Comment with line comment</h5>
-			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/4/">Open lesson 4 »</a></p>
-		</div>
-
-		<div class="jumbotron top-space">
-			<h4 class="lead">Lesson 5 - Refactoring</h4>
-			<h5>Refactor this, Change signature, Move code down, Move code up, Move to separate file, Move argument left, Move argument right, Extract method, Apply Inline refactoring</h5>
-			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/5/">Open lesson 5 »</a></p>
-		</div>
-
-		<div class="jumbotron top-space">
-			<h4 class="lead">Lesson 6 - Code analysis</h4>
-			<h5>Toggle code analysis in the current file, Go to next code issue, Go to previous code issue, Inspect this, Code cleanup, Parameter information</h5>
-			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/6/">Open lesson 6 »</a></p>
-		</div>
-
-		<div class="jumbotron top-space">
-			<h4 class="lead">Lesson 7 - Navigation 2</h4>
-			<h5>Go to last edited location, Navigate to…, Value origin and destination, Move to next error, Move to previous error, Create bookmark 9 (you can use numbers 1 .. 9), Go to bookmark 9 (you can use numbers 1 .. 9), Go to containing declaration</h5>
-			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/7/">Open lesson 7 »</a></p>
-		</div>
-
-		<div class="jumbotron top-space">
-			<h4 class="lead">Lesson 8 - Unit testing</h4>
-			<h5>Unit Test Explorer, Unit Test Sessions, Run all Unit Tests in solution, Run Unit Tests from current session, Run unit tests, Debug unit tests</h5>
-			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/8/">Open lesson 8 »</a></p>
-		</div>
-
-		<div class="jumbotron top-space">
-			<h4 class="lead">Lesson 9 - Additional windows</h4>
-			<h5>Structure window, Inspection Results window, Stack Trace Explorer, Hierarchies window, Todo lists, Paste multiple</h5>
-			<p class="text-right"><a class="btn btn-primary btn-large" href="/lessons/9/">Open lesson 9 »</a></p>
+		<div class="top-space">
+			<p class="text-center lead">Lesson 7 - <i>Visual Studio</i> keyboard shortcuts scheme</p>
+			<p class="text-center">Lessons for <i>ReSharper 2.x/IntelliJ IDEA</i> keyboard shortcuts scheme will be avaiable soon
+				<br/>Read more about <a href="https://www.jetbrains.com/resharper/help/Configuring_Keyboard_Shortcuts.html" target="_blank">Configuring Keyboard Shortcuts</a></p>
+			<!--[if IE]>
+                    <p>Some shortcuts are currently not working on Internet Explorer - please try different browser</p>
+                <![endif]-->
+			<div class="row top-space">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+					<div class="jumbotron text-center">
+						<h2 id="reshortcut-command">Loading lesson...</h2>
+						<div class="progress progress-bar-warning">
+							<div id="progress" class="progress-bar progress-bar-success" style="width: 0%"></div>
+						</div>
+						<ins>Not sure what to do? <a href="/how-does-it-work/">Check how it works!</a></ins>
+					</div>
+				</div>
+				<div class="col-lg-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4">
+					<div id="reshortcuts-key" class="alert-info text-center">
+						<h2><strong id="reshortcuts-key-value"></strong></h2></div>
+				</div>
+				<div class="col-lg-4"></div>
+			</div>
 		</div>
 
 		<div class="col-sm-12 top-space">
@@ -217,9 +159,44 @@
 
 	</footer>
 
+	<div>
+		<div id="thankYou" class="modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">×</button>
+						<h4 class="modal-title">CONGRATULATIONS!</h4>
+					</div>
+					<div class="modal-body">
+						<p>You've just complited Lesson 7!</p>
+						<p>Now try <a href="/lessons/8/"><b>Lesson 8</b></a></p>
+						<p>&nbsp;</p>
+						<p><a href="https://twitter.com/intent/tweet?text=%23ReShortcuts%20-%20Probably%20the%20best%20way%20to%20learn%20%23ReSharper%20shortcuts!%20http%3A%2F%2Freshortcuts.github.io"
+							target="_blank"><b>click here</b></a> and let your friends know about ReShortcuts!</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
+	</div>
+
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+	<script src="/scripts//keymage.js"></script>
+
+	<script src="/scripts/lessonsProvider.js"></script>
+	<script src="/scripts/lessonsManager.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+               window.reShortcuts.lessonsManager().init(7); 
+            });
+	</script>
 </body>
 
 </html>

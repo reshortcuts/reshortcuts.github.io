@@ -119,6 +119,27 @@
                 case "2":
                     shortcuts = lessonsProvider.getLesson2();
                     break;
+                case "3":
+                    shortcuts = lessonsProvider.getLesson3();
+                    break;
+                case "4":
+                    shortcuts = lessonsProvider.getLesson4();
+                    break;
+                case "5":
+                    shortcuts = lessonsProvider.getLesson5();
+                    break;
+                case "6":
+                    shortcuts = lessonsProvider.getLesson6();
+                    break;
+                case "7":
+                    shortcuts = lessonsProvider.getLesson7();
+                    break;
+                case "8":
+                    shortcuts = lessonsProvider.getLesson8();
+                    break;
+                case "9":
+                    shortcuts = lessonsProvider.getLesson9();
+                    break;
                 default:
                     alert("Lesson " + lesson + " doesn't exist");
                     return;
